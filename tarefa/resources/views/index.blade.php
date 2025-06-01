@@ -23,6 +23,7 @@
                     </li>
                 @endforeach
             </ul>
+            {{ $tarefas->links() }}
         </div>
     </div>
 @endsection

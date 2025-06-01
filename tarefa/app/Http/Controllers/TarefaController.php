@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class TarefaController extends Controller
 {
     public function index() {
-        $tarefas = Tarefa::all();
+        $tarefas = Tarefa::paginate(2);
         return view('index')->with('tarefas', $tarefas);
     }
 
